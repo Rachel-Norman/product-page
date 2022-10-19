@@ -22,7 +22,7 @@ img {
 }
 
 .wrapper {
-  max-width: 375px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -81,8 +81,8 @@ p data {
 }
 
 .button:hover {
-  background-color: #665447;
-  color: #fff;
+  background-color: #F0E9E1;
+  color: #000;
 }
 
 h4 {
@@ -163,11 +163,6 @@ footer {
 
 /* Add media query for tablet */
 @media only screen and (min-width: 375px) {
-
-.wrapper {
-  max-width: 768px;
-  margin: 0 auto;
-}
 
 }
 

@@ -12,6 +12,8 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
   /* include your font family and default line-height */
 }
 
@@ -20,14 +22,23 @@ img {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 375px;
   margin: 0 auto;
+}
+
+.logo {
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #F0E9E1;
+  padding: 0 1.5rem;
 }
 
 header nav ul {
@@ -40,7 +51,7 @@ header nav ul li a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 header nav ul li a:hover,
@@ -48,16 +59,157 @@ header nav ul li a:focus {
   text-decoration: underline;
 }
 
+h2 {
+  margin: .5rem 0 0 1.5rem;
+  padding: 0;
+  font-size: 2rem;
+}
+
+p data {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.button {
+  border-radius: 0;
+  background-color: #224229;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  margin: 1.5rem;
+}
+
+.button:hover {
+  background-color: #665447;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+.money-tree p {
+  margin: 1.5rem;
+}
+
+.money-tree h4 {
+  margin: 1.5rem;
+}
+
+.money-tree dl {
+  margin: 0 1.5rem;
+}
+
+.money-tree ul {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.product img:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+.description {
+  margin: 1.5rem;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+.quotes {
+  color: #fff;
+  background-color: #224229;
+  padding: 1.5rem;
+}
+
+.quotes cite {
+  padding: 4rem;
+}
+
+.browsed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.browsed p {
+  margin: 0;
+  padding: 0;
+}
+
+section h3 {
+  margin: 1.5rem;
+}
+
 footer {
+  padding: 1.5rem;
   text-align: center;
+  color: #000;
+  background-color: #F0E9E1;
 }
 
 
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
+@media only screen and (min-width: 375px) {
 
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+}
 
 
 
 /* Add media query for desktop */
+@media only screen and (min-width: 768px) {
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.money-tree {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.money-tree img {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.product img:nth-child(3) {
+  grid-column: 3;
+}
+
+.browsed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+}
+
+}
